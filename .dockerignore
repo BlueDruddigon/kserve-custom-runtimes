@@ -1,0 +1,12 @@
+.dockerignore
+.env
+.git
+.gitignore
+.venv
+.vscode
+cspell.json
+checkpoints
+Dockerfile
+Makefile
+resources
+scripts
