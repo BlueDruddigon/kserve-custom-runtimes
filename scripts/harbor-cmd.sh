@@ -22,6 +22,6 @@ DIGESTS=$(
 for digest in ${DIGESTS}; do
   if [[ -n ${digest} ]]; then
     curl -sk -X DELETE -u "${HARBOR_USERNAME}:${HARBOR_PASSWORD}" "https://${HARBOR_URL}/api/v2.0/projects/${PROJECT}/repositories/${IMAGE}/artifacts/${digest}"
-    echo "deleted ${REPO}:${TAG}@${digest}"
+    echo "deleted ${REPO}@${digest}"
   fi
 done
