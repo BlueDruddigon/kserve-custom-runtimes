@@ -8,3 +8,17 @@ wheels/
 
 # Virtual environments
 .venv
+env
+
+# gitignore itself
+.gitignore
+
+# MacOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# lockfiles
+uv.lock
