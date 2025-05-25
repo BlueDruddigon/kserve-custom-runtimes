@@ -7,7 +7,15 @@ authors = [
     { name = "BlueDruddigon", email = "haibuihoang1999@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+  "kserve==0.14.1",
+  "vllm==0.6.6",
+  "faiss-cpu>=1.11.0",
+  "setuptools>=61"
+]
+
+[project.optional-dependencies]
+storage = ["boto3>=1.29.0"]
 
 [project.scripts]
 kserve-custom-runtimes = "kserve_custom_runtimes:main"
@@ -15,3 +23,10 @@ kserve-custom-runtimes = "kserve_custom_runtimes:main"
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
+
+[tool.uv]
+link-mode = "copy"
+no-cache = true
+
+[tool.ruff]
+extend = "~/.config/pyproject/pyproject.toml"
