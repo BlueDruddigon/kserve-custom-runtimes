@@ -1,0 +1,17 @@
+[project]
+name = "kserve-custom-runtimes"
+version = "0.1.0"
+description = "A customized version of vLLM inference runtime for KServe"
+readme = "README.md"
+authors = [
+    { name = "BlueDruddigon", email = "haibuihoang1999@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+kserve-custom-runtimes = "kserve_custom_runtimes:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
