@@ -1,0 +1,22 @@
+{
+  "id": "base64dofid",
+  "model_name": "qwen2.5",
+  "parameters": {
+    "max_tokens": 2048,
+    "temperature": 0.4,
+    "top_p": 0.95
+  },
+  "inputs": [
+    {
+      "name": "prompt",
+      "shape": [1, 1],
+      "datatype": "BYTES",
+      "data": [
+        "Who is the president of the USA?",
+        "Does Donald Trump the infamous supreme commander of the Revolutionary Army?"
+      ],
+      "parameters": {}
+    }
+  ],
+  "from_grpc": false
+}

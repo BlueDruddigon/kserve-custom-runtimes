@@ -1,0 +1,9 @@
+{
+  "modelType": "vllm-emb",
+  "data": "Who is the president of the USA?",
+  "parameters": {
+    "margin_threshold": 0.021,
+    "cosine_threshold": 0.75,
+    "max_len": 40
+  }
+}
